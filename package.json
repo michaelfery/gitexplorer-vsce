@@ -2,7 +2,7 @@
     "name": "gitexplorer",
     "displayName": "Git CLI Explorer",
     "description": "A cheatsheet for Git CLI. Find the right commands directly from VS Code.",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "publisher": "mfery",
     "engines": {
         "vscode": "^1.31.0"
