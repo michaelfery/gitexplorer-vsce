@@ -1,0 +1,54 @@
+{
+    "name": "gitexplorer",
+    "displayName": "Git CLI Explorer",
+    "description": "A cheatsheet for Git CLI. Find the right commands directly from VS Code.",
+    "version": "1.0.0",
+    "publisher": "mfery",
+    "engines": {
+        "vscode": "^1.31.0"
+    },
+    "icon": "media/logo.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/michaelfery/gitexplorer-vsce"
+    },
+    "bugs": {
+        "url": "https://github.com/michaelfery/gitexplorer-vsce/issues"
+    },
+    "categories": [
+        "Other"
+    ],
+    "keywords": [
+        "Git",
+        "cli",
+        "cheatsheet",
+        "commands",
+        "gitcommands"
+    ],
+    "activationEvents": [
+        "onCommand:gitexplorer.search"
+    ],
+    "main": "./out/extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "gitexplorer.search",
+                "title": "Git CLI Explorer : Find a command"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "@types/mocha": "^2.2.42",
+        "@types/node": "^8.10.25",
+        "tslint": "^5.8.0",
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.30"
+    }
+}
