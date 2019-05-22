@@ -1,4 +1,4 @@
-# Git CLI Explorer Extension for Visual Studio Code
+# Hello Azure Boards
 
 A [Visual Studio Code](https://code.visualstudio.com/) extension that provides support for Git CLI (Command Line Interface) in Visual Studio Code. Like a cheatsheet but interactive.
 
